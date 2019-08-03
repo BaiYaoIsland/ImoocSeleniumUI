@@ -1,0 +1,11 @@
+teste
+teste
+teste
+2019-08-02 16:56:07,730 user_log.py <module> 10 DEBUG teste1234
+2019-08-02 16:56:58,497 user_log.py----> <module> 10 DEBUG -----teste1234
+2019-08-02 17:45:31,503 user_log.py----> <module> 10 DEBUG -----teste1234
+2019-08-02 17:46:04,989 user_log.py----> <module> 10 DEBUG -----teste1234
+2019-08-02 17:51:59,197 user_log.py----> <module> 10 DEBUG -----teste1234
+2019-08-02 17:52:14,411 user_log.py----> <module> 10 DEBUG -----teste1234
+2019-08-02 17:53:10,555 user_log.py----> <module> 10 DEBUG -----teste1234
+2019-08-02 17:53:24,940 user_log.py----> <module> 10 DEBUG -----teste1234
