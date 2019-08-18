@@ -1,0 +1,4 @@
+2019-08-05 14:41:02,389 log_test.py __init__ 10 DEBUG teste12138
+2019-08-05 14:46:34,243 log_test.py <module> 10 DEBUG test
+2019-08-05 14:46:47,846 log_test.py <module> 10 DEBUG 张哥就是牛逼
+2019-08-05 14:49:40,476 log_test.py <module> 10 DEBUG 张哥就是牛逼

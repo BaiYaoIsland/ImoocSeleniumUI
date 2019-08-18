@@ -1,0 +1,9 @@
+test
+test12138
+2019-08-04 17:21:41,224 log_test.py <module> 10 DEBUG test12138
+2019-08-04 17:35:25,630 log_test.py <module> 10 DEBUG test12138
+2019-08-04 17:35:51,340 log_test.py <module> 10 DEBUG test12138
+2019-08-04 17:37:00,492 log_test.py <module> 10 DEBUG test12138
+2019-08-04 17:37:42,246 log_test.py <module> 10 DEBUG test12138
+2019-08-04 17:38:56,097 log_test.py <module> 10 DEBUG test12138
+2019-08-04 17:39:44,229 log_test.py <module> 10 DEBUG test12138

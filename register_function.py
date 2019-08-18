@@ -2,8 +2,8 @@ from selenium import webdriver
 import time
 import random
 from PIL import Image
-from Imooc_selenium.base.find_element import FindElement
-from Imooc_selenium.util.ShowapiRequest import ShowapiRequest
+from base.find_element import FindElement
+from util.ShowapiRequest import ShowapiRequest
 
 class RegisterFunction():
 

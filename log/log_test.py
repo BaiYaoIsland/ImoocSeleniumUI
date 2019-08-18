@@ -7,17 +7,17 @@ class UserLog():
         self.logger = logging.getLogger()
         self.logger.setLevel(logging.DEBUG)
 
-        # # 控制台输出日志
         consle = logging.StreamHandler()
         self.logger.addHandler(consle)
         self.logger.debug("info")
+
         # 文件名字
         # 获取当前文件所在目录
         base_dir = os.path.dirname(os.path.abspath(__file__))
         print("This is base_dir :",base_dir)
 
         # 在获取当前目录的前提下通过join增加logs路径
-        log_dir = os.path.join(base_dir, "logs")
+        log_dir = os.path.join(base_dir, "logs1")
         print("This is log_dir :",log_dir)
 
         # 定义日志文件名为当前日期（定义格式）加后缀名
@@ -28,25 +28,31 @@ class UserLog():
         log_name = log_dir + "/" + log_file
         print("This is laster log_name :",log_name)
 
+        # 文件输出日志
+        self.file_handle = logging.FileHandler(log_name,'a', encoding='utf-8')
+        self.file_handle.setLevel(logging.INFO)
 
-        # 定义文件输出日志
-        file_handle = logging.FileHandler(log_name, 'a', encoding='utf-8')
-
-        # 定义日志输出的内容包括时间、文件名、函数名、行数、等级、信息
         formatter = logging.Formatter(
-            '%(asctime)s %(filename)s----> %(funcName)s %(levelno)s %(levelname)s -----%(message)s'
+            '%(asctime)s %(filename)s %(funcName)s %(levelno)s %(levelname)s %(message)s'
         )
 
-        file_handle.setFormatter(formatter)
-        self.logger.addHandler(file_handle)
-        self.logger.debug("teste1234")
+        self.file_handle.setFormatter(formatter)
+        self.logger.addHandler(self.file_handle)
 
-        self.logger.removeHandler(file_handle)
-        file_handle.close()
+        # self.logger.debug("teste12138")
+
+        # self.logger.removeHandler(file_handle)
+        # file_handle.close()
+
     def get_log(self):
         return self.logger
+
+    def close_handle(self):
+        self.logger.removeHandler(self.file_handle)
+        self.file_handle.close()
 
 if __name__ == '__main__':
     user = UserLog()
     log = user.get_log()
-    log.debug('test')
+    log.debug('张哥就是牛逼')
+    user.close_handle()
