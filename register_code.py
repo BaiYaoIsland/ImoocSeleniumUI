@@ -2,7 +2,7 @@ from selenium import webdriver
 import time
 import random
 from PIL import Image
-from Imooc_selenium.util.ShowapiRequest import ShowapiRequest
+from util.ShowapiRequest import ShowapiRequest
 
 driver = webdriver.Safari()
 # 浏览器初始化
@@ -48,7 +48,7 @@ def code_online(file_name):
 def run_main():
     user_name_info = get_range_user()
     user_email = get_range_user() + "@sina.com"
-    file_name = "./screenshot/imooc.png"
+    file_name = "./screenshot/test.png"
     driver_init()
     get_element("register_email").send_keys(user_email)
     get_element("register_nickname").send_keys(user_name_info)

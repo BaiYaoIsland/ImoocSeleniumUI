@@ -65,7 +65,7 @@ class RegisterFunction():
     def main(self):
         user_name_info = self.get_range_user()
         user_email = user_name_info + "@sina.com"
-        file_name = "./screenshot/imooc.png"
+        file_name = "./screenshot/test.png"
         code_text = self.code_online(file_name)
         self.send_user_info('user_email',user_email)
         self.send_user_info('user_name', user_name_info)

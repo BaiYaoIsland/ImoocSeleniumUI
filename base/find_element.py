@@ -3,10 +3,8 @@
 封装基本webdriver get元素的方法，被page层调用
 通过配置文件常量参数定位
 '''
-from Imooc_selenium.util.read_ini import ReadIni
+from util.read_ini import ReadIni
 from selenium import webdriver
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.wait import WebDriverWait as wd
 
 class FindElement():
     def __init__(self,driver):

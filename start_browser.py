@@ -18,7 +18,7 @@ element_located = EC.visibility_of_element_located(locator)
 wd(driver,1).until(element_located)
 
 # 获取验证码坐标将其截取、保存下来另作识别
-driver.save_screenshot("./screenshot/imooc.png")
+driver.save_screenshot("./screenshot/test.png")
 code_element = driver.find_element_by_id("getcode_num")
 print(code_element.location)
 left = code_element.location['x']

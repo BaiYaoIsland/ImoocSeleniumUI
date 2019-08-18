@@ -64,17 +64,6 @@ class FirstCase(unittest.TestCase):
         self.assertFalse(success)
         # self.assert
 
-
-'''    
-def main():
-    first = FirstCase()
-    first.test_login_code_error()
-    first.test_login_email_error()
-    first.test_login_password_error()
-    first.test_login_username_error()
-    first.test_login_success()
-'''
-
 if __name__ == '__main__':
     file_path = os.path.join(os.getcwd() + "/report/" + "first_case.html")
     f = open(file_path, 'wb')
